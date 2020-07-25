@@ -2,7 +2,7 @@ First time here
 
 1) Copy repository URL (green button with "Code")
 2) Open Terminal console.
-3) Go to the folder where you want to put the project.
+3) Go to the folder where you want to put the project. (using cd bash command)
 4) Type this command and paste the repository URL : git clone repository URl
 5) If it doesn't work, ask me for access.
 6) Then go to develop branch : git checkout develop
