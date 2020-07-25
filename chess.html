@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>chess</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/javascript" src="/Applications/MAMP/htdocs/js/ficher.js"></script>
+    </head>
+    <body class="body">
+        <table class="chess-board">
+            <tbody>
+                <tr>
+                    <th></th>
+                    <th>a</th>
+                    <th>b</th>
+                    <th>c</th>
+                    <th>d</th>
+                    <th>e</th>
+                    <th>f</th>
+                    <th>g</th>
+                    <th>h</th>
+                </tr>
+                <tr>
+                    <th>8</th>
+                    <td id="8a" class="light"><img src="/art/BR.gif" width=30 height=30/></td>
+                    <td id="8b" class="dark"><img src="/art/BB.gif" width=30 height=30/></td>
+                    <td id="8c" class="light"><img src="/art/BN.gif" width=30 height=30/></td>
+                    <td id="8d" class="dark"><img src="/art/BQ.gif" width=30 height=30/></td>
+                    <td id="8e" class="light"><img src="/art/BK.gif" width=30 height=30/></td>
+                    <td id="8f" class="dark"><img src="/art/BN.gif" width=30 height=30/></td>
+                    <td id="8g" class="light"><img src="/art/BB.gif" width=30 height=30/></td>
+                    <td id="8h" class="dark"><img src="/art/BR.gif" width=30 height=30/></td>
+                </tr>
+                <tr>
+                    <th>7</th>
+                    <td id="7a" class="dark"><img src="/art/BP.gif" width=30 height=30/></td>
+                    <td id="7b" class="light"><img src="/art/BP.gif" width=30 height=30/></td>
+                    <td id="7c" class="dark"><img src="/art/BP.gif" width=30 height=30/></td>
+                    <td id="7d" class="light"><img src="/art/BP.gif" width=30 height=30/></td>
+                    <td id="7e" class="dark"><img src="/art/BP.gif" width=30 height=30/></td>
+                    <td id="7f" class="light"><img src="/art/BP.gif" width=30 height=30/></td>
+                    <td id="7g" class="dark"><img src="/art/BP.gif" width=30 height=30/></td>
+                    <td id="7h" class="light"><img src="/art/BP.gif" width=30 height=30/></td>
+                </tr>
+                <tr>
+                    <th>6</th>
+                    <td id="6a" class="light"></td>
+                    <td id="6b" class="dark"></td>
+                    <td id="6c" class="light"></td>
+                    <td id="6d" class="dark"></td>
+                    <td id="6e" class="light"></td>
+                    <td id="6f" class="dark"></td>
+                    <td id="6g" class="light"></td>
+                    <td id="6h" class="dark"></td>
+                </tr>
+                <tr>
+                    <th>5</th>
+                    <td id="5a" class="dark"></td>
+                    <td id="5b" class="light"></td>
+                    <td id="5c" class="dark"></td>
+                    <td id="5d" class="light"></td>
+                    <td id="5e" class="dark"></td>
+                    <td id="5f" class="light"></td>
+                    <td id="5g" class="dark"></td>
+                    <td id="5h" class="light"></td>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <td id="4a" class="light"></td>
+                    <td id="4b" class="dark"></td>
+                    <td id="4c" class="light"></td>
+                    <td id="4d" class="dark"></td>
+                    <td id="4e" class="light"></td>
+                    <td id="4f" class="dark"></td>
+                    <td id="4g" class="light"></td>
+                    <td id="4h" class="dark"></td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td id="3a" class="dark"></td>
+                    <td id="3b" class="light"></td>
+                    <td id="3c" class="dark"></td>
+                    <td id="3d" class="light"></td>
+                    <td id="3e" class="dark"></td>
+                    <td id="3f" class="light"></td>
+                    <td id="3g" class="dark"></td>
+                    <td id="3h" class="light"></td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td id="2a" class="light"><img src="/art/WP.gif" width=30 height=30/></td>
+                    <td id="2b" class="dark"><img src="/art/WP.gif" width=30 height=30/></td>
+                    <td id="2c" class="light"><img src="/art/WP.gif" width=30 height=30/></td>
+                    <td id="2d" class="dark"><a href="#2d" onclick="myFunction2();"><img src="/art/WP.gif" width=30 height=30/></td>
+                    <td id="2e" class="light"><a href="#2e" onclick="myFunction();"><img src="/art/WP.gif" width=30 height=30/></td>
+                    <td id="2f" class="dark"><img src="/art/WP.gif" width=30 height=30/></td>
+                    <td id="2g" class="light"><img src="/art/WP.gif" width=30 height=30/></td>
+                    <td id="2h" class="dark"><img src="/art/WP.gif" width=30 height=30/></td>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <td id="1a" class="dark"><img src="/art/WR.gif" width=30 height=30/></td>
+                    <td id="1b" class="light"><img src="/art/WB.gif" width=30 height=30/></td>
+                    <td id="1c" class="dark"><img src="/art/WN.gif" width=30 height=30/></td>
+                    <td id="1d" class="light"><img src="/art/WQ.gif" width=30 height=30/></td>
+                    <td id="1e" class="dark"><img src="/art/WK.gif" width=30 height=30/></td>
+                    <td id="1f" class="light"><img src="/art/WN.gif" width=30 height=30/></td>
+                    <td id="1g" class="dark"><img src="/art/WB.gif" width=30 height=30/></td>
+                    <td id="1h" class="light"><img src="/art/WR.gif" width=30 height=30/></td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="display"></div>
+        <div id="display2"></div> 
+    </body>
+</html>
