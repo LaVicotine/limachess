@@ -3,3 +3,4 @@
 .chess-board td { border: 1px solid; width: 32; height: 32; }
 .chess-board .light { background: #dee0ff; }
 .chess-board .dark { background: #8086ff; }
+.chess-board .red { background: #ff0000; }
